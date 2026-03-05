@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="product.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Desserts</h1>
+  </header>
+
+  <main>
+    <div class="selected">
+      <!-- デザート① -->
+      <div class="desserts_list">
+        <div class="desserts_img">
+          <img src="assets/images/image-waffle-desktop.jpg" id="waffle_img" alt="waffle">
+          <div class="count-overlay">
+            <button class="decrement" aria-label="Decrease quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="currentColor" viewBox="0 0 10 2">
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </button>
+            <div class="count">0</div>
+            <button class="increment" aria-label="Increase quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" viewBox="0 0 10 10">
+                <path d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </button>
+          </div>
+          <button class="add-to-cart" id="pushbtn">
+            <img src="assets/images/icon-add-to-cart.svg" alt="cart">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+        <div class="item">
+          <p class="desserts_name">Waffle</p>
+          <h2>Waffle with Berries</h2>
+          <p class="price">$6.50</p>
+        </div>
+      </div>
+
+      <!-- デザート② -->
+      <div class="desserts_list">
+        <div class="desserts_img">
+          <img src="assets/images/image-creme-brulee-desktop.jpg" id="brulee_img" alt="Crème Brûlée">
+          <div class="count-overlay">
+            <button class="decrement" aria-label="Decrease quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="currentColor" viewBox="0 0 10 2">
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </button>
+            <div class="count">0</div>
+            <button class="increment" aria-label="Increase quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" viewBox="0 0 10 10">
+                <path d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </button>
+          </div>
+          <button class="add-to-cart" id="pushbtn2">
+            <img src="assets/images/icon-add-to-cart.svg" alt="cart">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+        <div class="item">
+          <p class="desserts_name">Crème Brûlée</p>
+          <h2>Vanilla Bean Crème Brûlée</h2>
+          <p class="price">$7.00</p>
+        </div>
+      </div>
+
+      <!-- デザート③ -->
+      <div class="desserts_list">
+        <div class="desserts_img">
+          <img src="assets/images/image-macaron-desktop.jpg" id="macaron_img" alt="Macaron">
+          <div class="count-overlay">
+            <button class="decrement" aria-label="Decrease quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="currentColor" viewBox="0 0 10 2">
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </button>
+            <div class="count">0</div>
+            <button class="increment" aria-label="Increase quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" viewBox="0 0 10 10">
+                <path d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </button>
+          </div>
+          <button class="add-to-cart" id="pushbtn3">
+            <img src="assets/images/icon-add-to-cart.svg" alt="cart">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+        <div class="item">
+          <p class="desserts_name">Macaron</p>
+          <h2>Macaron Mix of Five</h2>
+          <p class="price">$8.00</p>
+        </div>
+      </div>
+
+      <!-- デザート④ -->
+      <div class="desserts_list">
+        <div class="desserts_img">
+          <img src="assets/images/image-tiramisu-desktop.jpg" id="tiramisu_img" alt="Tiramisu">
+          <div class="count-overlay">
+            <button class="decrement" aria-label="Decrease quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="currentColor" viewBox="0 0 10 2">
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </button>
+            <div class="count">0</div>
+            <button class="increment" aria-label="Increase quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" viewBox="0 0 10 10">
+                <path d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </button>
+          </div>
+          <button class="add-to-cart" id="pushbtn4">
+            <img src="assets/images/icon-add-to-cart.svg" alt="cart" class="cart">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+        <div class="item">
+          <p class="desserts_name">Tiramisu</p>
+          <h2>Classic Tiramisu</h2>
+          <p class="price">$5.50</p>
+        </div>
+      </div>
+
+      <!-- デザート⑤ -->
+      <div class="desserts_list">
+        <div class="desserts_img">
+          <img src="assets/images/image-baklava-desktop.jpg" id="baklava_img" alt="Baklava">
+          <div class="count-overlay">
+            <button class="decrement" aria-label="Decrease quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="currentColor" viewBox="0 0 10 2">
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </button>
+            <div class="count">0</div>
+            <button class="increment" aria-label="Increase quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" viewBox="0 0 10 10">
+                <path d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </button>
+          </div>
+          <button class="add-to-cart" id="pushbtn5">
+            <img src="assets/images/icon-add-to-cart.svg" alt="cart" class="cart">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+
+        <!-- デザート⑥ -->
+        <div class="item">
+          <p class="desserts_name">Baklava</p>
+          <h2>Pistachio Baklava</h2>
+          <p class="price"> $4.00</p>
+        </div>
+      </div>
+
+      <div class="desserts_list">
+        <div class="desserts_img">
+          <img src="assets/images/image-meringue-desktop.jpg" id="pie_img" alt="Lemon Meringue Pie">
+          <div class="count-overlay">
+            <button class="decrement" aria-label="Decrease quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="currentColor" viewBox="0 0 10 2">
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </button>
+            <div class="count">0</div>
+            <button class="increment" aria-label="Increase quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" viewBox="0 0 10 10">
+                <path d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </button>
+          </div>
+          <button class="add-to-cart" id="pushbtn6">
+            <img src="assets/images/icon-add-to-cart.svg" alt="cart" class="cart">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+        <div class="item">
+          <p class="desserts_name"> Pie</p>
+          <h2>Lemon Meringue Pie</h2>
+          <p class="price">$5.00</p>
+        </div>
+      </div>
+
+      <!-- デザート⑦ -->
+      <div class="desserts_list">
+        <div class="desserts_img">
+          <img src="assets/images/image-cake-desktop.jpg" id="cake_img" alt="Red Velvet Cake">
+          <div class="count-overlay">
+            <button class="decrement" aria-label="Decrease quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="currentColor" viewBox="0 0 10 2">
+                <path id="dec_mark" d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </button>
+            <div class="count">0</div>
+            <button class="increment" aria-label="Increase quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" viewBox="0 0 10 10">
+                <path d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </button>
+          </div>
+          <button class="add-to-cart" id="pushbtn7">
+            <img src="assets/images/icon-add-to-cart.svg" alt="cart" class="cart">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+        <div class="item">
+          <p class="desserts_name">Cake</p>
+          <h2>Red Velvet Cake</h2>
+          <p class="price">$4.50</p>
+        </div>
+      </div>
+
+      <!-- デザート⑧ -->
+      <div class="desserts_list">
+        <div class="desserts_img">
+          <img src="assets/images/image-brownie-desktop.jpg" id="brownie_img" alt="Brownie">
+          <div class="count-overlay">
+            <button class="decrement" aria-label="Decrease quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="currentColor" viewBox="0 0 10 2">
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </button>
+            <div class="count">0</div>
+            <button class="increment" aria-label="Increase quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" viewBox="0 0 10 10">
+                <path d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </button>
+          </div>
+          <button class="add-to-cart" id="pushbtn8">
+            <img src="assets/images/icon-add-to-cart.svg" alt="cart" class="cart">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+        <div class="item">
+          <p class="desserts_name">Brownie</p>
+          <h2>Salted Caramel Brownie</h2>
+          <p class="price">$4.50</p>
+        </div>
+      </div>
+
+      <!-- デザート⑨ -->
+      <div class="desserts_list">
+        <div class="desserts_img">
+          <img src="assets/images/image-panna-cotta-desktop.jpg" id="pannacotta_img" alt="Vanilla Panna Cotta">
+          <div class="count-overlay">
+            <button class="decrement" aria-label="Decrease quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="currentColor" viewBox="0 0 10 2">
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </button>
+            <div class="count">0</div>
+            <button class="increment" aria-label="Increase quantity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" viewBox="0 0 10 10">
+                <path d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </button>
+          </div>
+          <button class="add-to-cart" id="pushbtn9">
+            <img src="assets/images/icon-add-to-cart.svg" alt="cart" class="cart">
+            <span>Add to Cart</span>
+          </button>
+        </div>
+        <div class="item">
+          <p class="desserts_name">Panna Cotta</p>
+          <h2>Vanilla Panna Cotta</h2>
+          <p class="price">$6.50</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- カート -->
+    <div class="your_cart">
+
+      <div class="your_cart2">
+        <h2 class="cart_title">Your Cart(<span id="cart-count">0</span>)</h2>
+        <div class="your_select">
+          <ul class="cart_list"></ul>
+        </div>
+        <div class="order_total">
+          <p class="total"></p>
+        </div>
+        <p class="carbon"><img src="/assets/images/icon-carbon-neutral.svg" alt="logo">This is a&nbsp; <b> carbon-neutral </b> &nbsp;delivery</p>
+        <button type="button" class="confirm_order">Confirm Order</button>
+      </div>
+
+      <div class="your_cart0">
+        <h2 class="cart_title">Your Cart()</h2>
+        <img src="/assets/images/illustration-empty-cart.svg" alt="icon">
+        <p>Your added items will appear here</p>
+      </div>
+    </div>
+
+    <div class="confirmed">
+      <div class="check">
+        <img src="/assets/images/icon-order-confirmed.svg" alt="order-icon">
+        <h2>Order Confirmed</h2>
+        <h3>We hope you enjoy your food!</h3>
+        <div class="check_list">
+        </div>
+        <button type="button" class="new_order">Start New Order</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <script src="product.js"></script>
+  </footer>
+
+</body>
+
+</html>
