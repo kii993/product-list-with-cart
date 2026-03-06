@@ -200,10 +200,11 @@ h4 {
 
 .price {
     font-size: 12px;
-    margin: 0;
     color: hsl(14, 86%, 42%);
     font-weight: 400;
-    padding-left:10px;
+    margin:0;
+    padding-bottom: 20px;
+    /* padding-left:10px; */
 }
 
 .subtotal{
@@ -720,11 +721,11 @@ h4 {
         display: block;
     }
 
-    .your_select li:nth-child(1) {
+    .qty{
         font-size: 16px;
     }
 
-    .your_select li:nth-child(2) {
+    .original-price{
         color: hsl(7, 20%, 60%);
         font-weight: 500;
         font-size: 16px;
@@ -732,7 +733,8 @@ h4 {
         margin-bottom: 0;
     }
 
-    .your_select li:nth-child(3) {
+    .subtotal{
+        font-size: 16px;
         font-weight: 500;
         padding-left: 10px;
     }
