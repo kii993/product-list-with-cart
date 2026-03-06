@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <h3>${product.name}</h3>
             <ul class="item-row">
                 <li class="qty">${qty}×</li>
-                <li class="price">@$${product.price.toFixed(2)}</li>
+                <li class="original-price">@$${product.price.toFixed(2)}</li>
                 <li class="subtotal">$${(qty * product.price).toFixed(2)}</li>
             </ul>
         `;
