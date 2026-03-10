@@ -546,7 +546,6 @@ h4 {
 
     html,
     body {
-        overflow-x: hidden;
         max-width: 100%;
     }
 
@@ -857,4 +856,5 @@ h4 {
     font-size: 24px;
     font-weight: 600;
 }
+
 }
